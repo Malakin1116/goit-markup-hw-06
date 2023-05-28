@@ -24,14 +24,14 @@
           
           <ul class="header-menu list">
             <li><a class="header-menu-list link line new-color" href="./index.html">Studio</a></li>
-            <li ><a class="header-menu-list link line" href="./portfolio.html">Portfolio</a></li>
-            <li ><a class="header-menu-list link line" href="" >Contacts</a></li>
+            <li ><a class="header-menu-list link " href="./portfolio.html">Portfolio</a></li>
+            <li ><a class="header-menu-list link " href="" >Contacts</a></li>
           </ul>
           </nav>
           <address class="adress">
             <ul class="adress-header list">
-              <li><a class="adress-contact-mail link line" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-              <li><a class="adress-contact-mail link line" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+              <li><a class="adress-contact-mail link " href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li><a class="adress-contact-mail link " href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
           </address>
       </div>
@@ -387,8 +387,20 @@
         </li>
       </ul>
     </div>
+    <div class="footer-dav-three">
+      <form action="/subscribe" method="POST">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <input type="submit" value="Subscribe">
+      </form>
     </div>
+    </div>
+    
+
     </footer>
+
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-class-button" data-modal-close>
@@ -396,6 +408,50 @@
             <use href="./images/icons.svg#icon-Vector-4"></use>
           </svg>
         </button>
+
+        <form class="modal-contact-form">
+          <label class="modal-contact-form-field-wrapper">
+           <span class="contact-form-field-span-name">Name</span>
+           <span class="contact-form-span-input-wrapper">
+            
+           </span>
+            <input class="contact-form-input" 
+            type="name" 
+            name="user_tel" 
+            required 
+            pattern="[a-zA-Zа-яА-ЯїЇіІєЄ']"
+            />
+            <span class="contact-form-span-logo"></span>
+          </label>
+          <label class="modal-contact-form-field-wrapper">
+            <span class="contact-form-field-span">Phone</span>
+            <span class="contact-form-span-logo"></span>
+            <input class="contact-form-input" 
+            type="tel" 
+            name="user_tel" 
+            required 
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx" />
+          </label>
+          <label class="modal-contact-form-field-wrapper">
+          <span class="contact-form-field-span">Email</span>
+          <span class="contact-form-span-logo"></span>
+            <input class="contact-form-input" 
+            type="email" 
+            name="email" 
+            required 
+            pattern="[a-zA-Zа-яА-ЯїЇіІєЄ'0-9]"/>
+          </label>
+          <label class="contact-form-field-wrapper">
+            Comment
+            <textarea class="contact-from-message" name="user_message" placeholder="Text input"></textarea>
+          </label>
+          <label class="contact-form-checkbox-wrapper">
+            <input class="contact-form-checkbox" type="checkbox" name="user_policy" required>
+            I accept the terms and conditions of the Privacy Policy
+          </label>
+         <button  type="submit" class="contact-form-submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
