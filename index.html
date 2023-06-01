@@ -412,27 +412,31 @@
         <form class="modal-contact-form">
           <label class="modal-contact-form-field-wrapper">
            <span class="contact-form-field-span-name">Name</span>
-           <span class="contact-form-span-input-wrapper">
-            
-           </span>
+        
             <input class="contact-form-input" 
             type="name" 
             name="user_tel" 
             required 
             pattern="[a-zA-Zа-яА-ЯїЇіІєЄ']"
             />
-            <span class="contact-form-span-logo"></span>
+            <svg aria-label="іконка ін" width="12" height="12" class="form-class-svg">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
           </label>
+
           <label class="modal-contact-form-field-wrapper">
             <span class="contact-form-field-span">Phone</span>
-            <span class="contact-form-span-logo"></span>
             <input class="contact-form-input" 
             type="tel" 
             name="user_tel" 
             required 
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
               title="xxx-xxx-xx-xx" />
+              <svg aria-label="іконка ін" width="12" height="12" class="form-class-svg">
+                <use href="./images/icons.svg#icon-tell"></use>
+              </svg>
           </label>
+
           <label class="modal-contact-form-field-wrapper">
           <span class="contact-form-field-span">Email</span>
           <span class="contact-form-span-logo"></span>
@@ -441,11 +445,16 @@
             name="email" 
             required 
             pattern="[a-zA-Zа-яА-ЯїЇіІєЄ'0-9]"/>
+            <svg aria-label="іконка ін" width="12" height="12" class="form-class-svg">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
           </label>
+
           <label class="contact-form-field-wrapper">
             Comment
             <textarea class="contact-from-message" name="user_message" placeholder="Text input"></textarea>
           </label>
+
           <label class="contact-form-checkbox-wrapper">
             <input class="contact-form-checkbox" type="checkbox" name="user_policy" required>
             I accept the terms and conditions of the Privacy Policy

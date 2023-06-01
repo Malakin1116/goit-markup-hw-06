@@ -161,10 +161,9 @@ gap: 40px;}
     border-radius: 2px;
     transition: #404BBF;
     margin-top: 24px;
-    opacity: 0;}
+    opacity: 1;}
 
-.line:hover::after,
-.line:focus::after {opacity:1;}
+
 
 .adress-header {
 display: flex;
