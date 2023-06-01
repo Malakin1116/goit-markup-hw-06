@@ -648,16 +648,13 @@ margin-top: 72px;
     width: 100%;
 }
 
-.contact-form-span-input-wrapper {
+.contact-form-input-wraper {
     position: relative;
+    display: block;
 }
 
-.contact-form-span-logo{
+.form-class-svg {
     position: absolute;
     top: 0;
-    left: 0;
-display: block;
-width: 18px;
-height: 24px;
-background-color:#222c8d;
+        left: 0;
 }
