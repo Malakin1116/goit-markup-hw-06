@@ -632,9 +632,15 @@ margin-top: 72px;
 .contact-form-input {
     width: 100%;
     height: 40px;
-    border:1px solid rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding-left: 38px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.contact-form-input:focus {
+    outline: none;
+    border-color:#4D5AE5;
 }
 
 .contact-form-field-span-name {
@@ -646,6 +652,18 @@ margin-top: 72px;
 
 .contact-from-message {
     width: 100%;
+height: 120px;
+resize: none;
+padding: 10px;
+line-height: 1.4;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 4px;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-from-message:focus {
+    outline: none;
+    border-color:#4D5AE5;
 }
 
 .contact-form-input-wraper {
@@ -655,6 +673,12 @@ margin-top: 72px;
 
 .form-class-svg {
     position: absolute;
-    top: 0;
-        left: 0;
+    top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.contact-form-input:focus + .form-class-svg {
+   fill: #4D5AE5;
 }
