@@ -415,10 +415,10 @@
         
           <span class="contact-form-input-wraper">
             <input class="contact-form-input" 
-            type="name" 
-            name="user_tel" 
+            type="text" 
+            name="name" 
             required 
-            pattern="[a-zA-Zа-яА-ЯїЇіІєЄ']"
+            pattern="[a-zA-Zа-яА-ЯїЇіІєЄ']+"
             />
             <svg aria-label="іконка ін" width="12" height="12" class="form-class-svg">
               <use href="./images/icons.svg#icon-name"></use>
@@ -447,7 +447,7 @@
             type="email" 
             name="email" 
             required 
-            pattern="[a-zA-Zа-яА-ЯїЇіІєЄ'0-9]"/>
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
             <svg aria-label="іконка ін" width="12" height="12" class="form-class-svg">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
@@ -461,7 +461,7 @@
 
           <label class="contact-form-checkbox-wrapper">
             <input class="contact-form-checkbox" type="checkbox" name="user_policy" required>
-            I accept the terms and conditions of the Privacy Policy
+            I accept the terms and conditions of the <a href="" class="span-privacy-police">Privacy Policy</a>
           </label>
          <button  type="submit" class="contact-form-submit">Send</button>
         </form>
