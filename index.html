@@ -388,7 +388,25 @@
       </ul>
     </div>
     <div class="footer-dav-three">
-      <form action="/subscribe" method="POST">
+      <label class="modal-contact-form-field-wrapper">
+        <span class="contact-form-field-span">Subscribe</span>
+        
+        <span class="contact-form-input-wraper">
+          <input class="contact-form-input" 
+          type="email" 
+          name="email" 
+          required 
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+          
+          </span>
+          <button  type="submit" class="contact-button-subscribe">Subscribe
+            <svg aria-label="іконка sent" width="24" height="20" class="footer-sent-icon" >
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </label>
+
+      <!-- <form action="/subscribe" method="POST">
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
     
@@ -397,7 +415,7 @@
             <use href="./images/icons.svg#icon-send"></use>
           </svg>
         </button>
-      </form>
+      </form> -->
     </div>
     </div>
     
@@ -426,7 +444,7 @@
             name="name" 
             required 
             pattern="[a-zA-Zа-яА-ЯїЇіІєЄ']+"
-            />
+            >
             <svg aria-label="іконка ін" width="12" height="12" class="form-class-svg">
               <use href="./images/icons.svg#icon-name"></use>
             </svg>
@@ -438,7 +456,7 @@
 
             <span class="contact-form-input-wraper">
               <input class="contact-form-input" type="tel" name="user_tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                title="xxx-xxx-xx-xx" />
+                title="xxx-xxx-xx-xx" >
               <svg aria-label="іконка ін" width="12" height="12" class="form-class-svg">
                 <use href="./images/icons.svg#icon-tell"></use>
               </svg>
@@ -454,7 +472,7 @@
             type="email" 
             name="email" 
             required 
-            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
             <svg aria-label="іконка ін" width="12" height="12" class="form-class-svg">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
