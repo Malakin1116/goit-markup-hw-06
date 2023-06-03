@@ -652,8 +652,8 @@ margin-bottom: 8px;}
     line-height: 1.5; 
     letter-spacing: 0.02em;
     color: #ffffff;}
-.modal-contact-form-field-wrapper {display: flex;}
-.modal-contact-label-wrapper {gap: 24px; display: flex; }
+.modal-contact-form-footer {display: flex; gap: 24px;}
+.modal-contact-label-wrapper {}
 .footer-contact-form-input {
     width: 264px;
     height: 40px;
@@ -694,6 +694,7 @@ fill: white;
 margin-left: 16px ;
 }
 /* 666modal*/
+.modal-contact-form-field-wrapper {display: flex;}
 .modal {
     position: absolute;
     top: 50%;
